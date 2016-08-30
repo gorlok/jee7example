@@ -1,0 +1,24 @@
+<ui:composition
+	template="/WEB-INF/templates/template.xhtml" 
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+    
+	<ui:define name="top">
+	    <h3>This is the last page.The value still saved in conversation(until the end() method is called)</h3>
+	</ui:define>
+	
+	<ui:define name="content">
+
+	    <h4><h:outputText value="#{conversationBean.someValue}" /></h4>
+	
+	    <h:form>
+	        <h:outputText
+	            value="Click finish to end the conversation(So saved values are disposed)" />
+	        <h:commandButton value="Finish" action="#{conversationBean.onFinish}" />
+	    </h:form>
+
+	</ui:define>    
+
+</ui:composition>
