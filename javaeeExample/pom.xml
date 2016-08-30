@@ -6,6 +6,9 @@
 	<artifactId>javaeeExample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<build>
+		<finalName>javaeeExample</finalName>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
