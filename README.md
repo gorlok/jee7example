@@ -1,1 +1,1 @@
-# javaeeExample
+# Java EE7 Examples
